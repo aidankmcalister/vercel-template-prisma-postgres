@@ -86,7 +86,3 @@ Make sure to set the `DATABASE_URL` environment variable in your deployment plat
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Prisma Documentation](https://www.prisma.io/docs)
 - [Prisma Postgres](https://www.prisma.io/postgres)
-
-## License
-
-MIT
