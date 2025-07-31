@@ -70,7 +70,7 @@ For Prisma ORM integration, use the connection string labeled as "Optimized for 
 
 ## Deployment
 
-### Vercel (Recommended)
+### Vercel
 
 1. Push your code to GitHub
 2. Import to Vercel
