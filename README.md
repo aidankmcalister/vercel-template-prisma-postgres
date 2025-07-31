@@ -1,11 +1,11 @@
-# PostgreSQL + Next.js Template
+# Prisma Postgres Template
 
-A minimal template for getting started with PostgreSQL and Next.js using direct SQL queries.
+A minimal template for getting started with Prisma Postgres and Next.js.
 
 ## Features
 
-- ✅ PostgreSQL database connection check
-- ✅ Simple SQL queries (no ORM)
+- ✅ Prisma Postgres database connection check
+- ✅ Simple database connectivity testing
 - ✅ Database connection status indicator
 - ✅ Ready for Vercel deployment
 
@@ -13,20 +13,21 @@ A minimal template for getting started with PostgreSQL and Next.js using direct 
 
 1. **Clone this template**
    ```bash
-   npx create-next-app@latest my-app --example https://github.com/your-username/postgresql-nextjs-template
+   npx create-next-app@latest my-app --example https://github.com/your-username/prisma-postgres-template
    cd my-app
    ```
 
-2. **Get a PostgreSQL database**
-   - [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres) (recommended)
+2. **Get a Prisma Postgres database**
+   - [Prisma Data Platform](https://cloud.prisma.io) (recommended)
+   - [Vercel Postgres](https://vercel.com/docs/storage/vercel-postgres)
    - [Neon](https://neon.tech)
    - [Supabase](https://supabase.com)
    - [Railway](https://railway.app)
 
 3. **Set up your environment**
    ```bash
-   # Copy your PostgreSQL connection string to .env
-   echo 'DATABASE_URL="postgresql://username:password@host:port/database"' > .env
+   # Copy your database connection string to .env
+   echo 'DATABASE_URL="your-connection-string"' > .env
    ```
 
 4. **Install dependencies and run**
@@ -45,7 +46,7 @@ A minimal template for getting started with PostgreSQL and Next.js using direct 
 │   ├── layout.tsx        # Root layout
 │   └── globals.css       # Global styles
 ├── lib/
-│   └── db.ts            # PostgreSQL connection pool
+│   └── db.ts            # Database connection pool
 ├── package.json         # Dependencies (pg, @types/pg)
 └── README.md           # This file
 ```
@@ -54,7 +55,18 @@ A minimal template for getting started with PostgreSQL and Next.js using direct 
 
 The template includes a simple database connection check:
 
-- **Connection check**: `SELECT NOW()`
+- **Connection check**: Tests database connectivity
+
+## Setup Instructions
+
+The template provides step-by-step instructions on the homepage:
+
+1. **Create a new database** using `npx create-db@latest`
+2. **Copy the connection string** labeled as "Connection string for everything else"
+3. **Add it to your `.env` file** as `DATABASE_URL`
+4. **Start building your app!**
+
+For Prisma ORM integration, use the connection string labeled as "Optimized for Prisma ORM" and follow the Prisma + Next.js guide.
 
 ## Deployment
 
@@ -72,8 +84,8 @@ Make sure to set the `DATABASE_URL` environment variable in your deployment plat
 ## Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-- [pg (Node.js PostgreSQL client)](https://node-postgres.com/)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Prisma Postgres](https://www.prisma.io/postgres)
 
 ## License
 
